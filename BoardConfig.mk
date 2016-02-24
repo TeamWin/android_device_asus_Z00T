@@ -58,6 +58,9 @@ BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom ehci-hcd.park=3 androidboot.bo
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x02000000 --tags_offset 0x00000100 --dt device/asus/Z00T/dt.img
 
+# Crypto
+TARGET_HW_DISK_ENCRYPTION := true
+
 # Recovery
 RECOVERY_VARIANT := twrp
 TARGET_USERIMAGES_USE_EXT4 := true
