@@ -1,0 +1,10 @@
+on init
+    wait /dev/qseecom
+    wait /dev/ion
+    chown system system /dev/qseecom
+    chown system system /dev/ion
+
+    start qseecomd
+
+service qseecomd /sbin/qseecomd
+    disabled
