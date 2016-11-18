@@ -5,6 +5,7 @@
 /recovery_bak   emmc      /dev/block/bootdevice/by-name/recovery             flags=backup=1;display="Recovery"
 /boot           emmc      /dev/block/bootdevice/by-name/boot
 /recovery       emmc      /dev/block/bootdevice/by-name/recovery
+/misc           emmc      /dev/block/bootdevice/by-name/misc
 
 /asdf           ext4      /dev/block/bootdevice/by-name/asdf                 flags=display="ASDF";wipeingui;backup=1
 /factory        ext4      /dev/block/bootdevice/by-name/factory              flags=display="Factory";backup=1
